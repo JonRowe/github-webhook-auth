@@ -6,7 +6,9 @@ Simple gem / Rack middleware for forcing a valid Github Webhook
 
 Add this line to your application's Gemfile:
 
-    gem 'github-webhook-auth'
+```ruby
+gem 'github-webhook-auth'
+```
 
 And then execute:
 
@@ -18,10 +20,12 @@ Or install it yourself as:
 
 ## Usage
 
-Set ENV['GITHUB_WEBHOOK_TOKEN'] to a secure value and then in your preferred
+Set `ENV['GITHUB_WEBHOOK_TOKEN']` to a secure value and then in your preferred
 Rack configuration location for your webhook endpoint add:
 
-    use Github::Webhook::Auth
+```ruby
+use Github::Webhook::Auth
+```
 
 ## Contributing
 
